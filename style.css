@@ -3,10 +3,54 @@
     padding: 0;
 }
 
-.firstname {
-    font-style: italic;
-}
-
-.lastname {
-    font-weight: bold;
-}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .left-side {
+    text-align: center;
+  }
+  
+  .name {
+    text-decoration: underline;
+  }
+  
+  .contact-info {
+    margin-top: 20px;
+  }
+  
+  .right-side {
+    flex-grow: 1;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    border-bottom: 1px solid black;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .profile-picture img {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+    }
+  }
